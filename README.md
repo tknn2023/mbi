@@ -39,7 +39,10 @@ Build a graph from data.
 `k`: `int` The number of neighbors to be searched.  
 `tknn_leaf_size`: `int` The leaf size of the tree used in the MBI algorithm. It is recommended to use about 5 to 10% of the data size.  
 
-`knnrs.TknnMBI.single_query(self, q, start_label, end_label)`  
+```python
+knnrs.TknnMBI.single_query(self, q, start_label, end_label)
+```  
+
 Search for k nearest neighbors from a single query point on the graph.  
 `q`: `np.ndarray<f32>[dim]` A query point to be searched.  
 `start_label`: `i64` The start label of the search interval.  
